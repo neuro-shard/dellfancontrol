@@ -1,0 +1,16 @@
+min_fan: 8          # safe quiet floor for R730xd
+poll_time: 10        # seconds
+
+sensors:
+  - {type: ipmi, name: "Inlet Temp",   target: 30, panic: 45, weight: 1.0}
+  - {type: ipmi, name: "Exhaust Temp", target: 42, panic: 65, weight: 1.0}
+  - {type: host, name: "Package id 0", target: 65, panic: 85, weight: 2.0}
+
+pid:
+  kp: 2.2
+  ki: 0.04
+  kd: 0.10
+  sample_time: 10
+  pom: true
+  dom: true
+  fan_scale: 2
