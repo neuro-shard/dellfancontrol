@@ -33,7 +33,7 @@ pip install pyyaml pySMART simple_pid
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/YOURNAME/dellfancontrol.git
+   git clone https://github.com/neuro-shard/dellfancontrol.git
    cd dellfancontrol
    ```
 
